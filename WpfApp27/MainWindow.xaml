@@ -24,7 +24,7 @@
         </TabControl>
         
         <StackPanel Grid.Row="1">
-            <Button 
+            <Button  
                 x:Name="closeButton" 
                 Width="150" 
                 Margin="12,6" 
