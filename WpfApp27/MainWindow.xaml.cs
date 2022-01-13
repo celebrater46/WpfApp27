@@ -24,5 +24,10 @@ namespace WpfApp27
         {
             InitializeComponent();
         }
+
+        private void CloseButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

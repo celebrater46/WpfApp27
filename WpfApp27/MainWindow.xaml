@@ -24,7 +24,13 @@
         </TabControl>
         
         <StackPanel Grid.Row="1">
-            <Button Width="150" Margin="12,6" HorizontalAlignment="Right" Content="Close(_C)"/>
+            <Button 
+                x:Name="closeButton" 
+                Width="150" 
+                Margin="12,6" 
+                HorizontalAlignment="Right" 
+                Content="Close(_C)"
+                Click="CloseButton_OnClick"/>
         </StackPanel>
     </Grid>
 </Window>
