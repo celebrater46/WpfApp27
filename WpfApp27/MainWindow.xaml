@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp27"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Regex Tester .NET" Height="450" Width="800"
+        ResizeMode="CanResizeWithGrip">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TabControl Margin="6">
+            <TabItem Header="Matching"></TabItem>
+            <TabItem Header="Help"></TabItem>
+        </TabControl>
+        
+        <StackPanel Grid.Row="1">
+            <Button Width="150" Margin="12,6" HorizontalAlignment="Right" Content="Close(_C)"/>
+        </StackPanel>
     </Grid>
 </Window>
