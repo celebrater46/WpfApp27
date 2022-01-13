@@ -5,8 +5,217 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:WpfApp27.Views.Pages"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        
-    </Grid>
+             d:DesignHeight="500" d:DesignWidth="800">
+    <!-- <Grid> -->
+    <!--      -->
+    <!-- </Grid> -->
+    <FlowDocumentScrollViewer>
+        <FlowDocument>
+            <Section>
+                <Paragraph>
+                    <Bold>Regular Expression Quick Reference</Bold>
+                </Paragraph>
+                
+                <Table FontFamily="JetBrains Mono, Cascadia Code, BIZ UDGothic, Yu Gothic Medium, Meiryo">
+                    <Table.Resources>
+                        <Style TargetType="TableCell">
+                            <Setter Property="BorderBrush" Value="Silver"/>
+                            <Setter Property="BorderThickness" Value="0.5"/>
+                        </Style>
+                    </Table.Resources>
+                    
+                    <Table.Columns>
+                        <TableColumn Width="*"/>
+                        <TableColumn Width="4*"/>
+                    </Table.Columns>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>.</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Any character.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>*</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Repeat the previous character 0 or more.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>+</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Repeat the previous character 1 or more.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>?</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Repeat the previous character 0 or 1 time.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>^</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Head of line.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>$</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>End of line.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>{🥝}</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Repeat the previous character 🥝 times.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>{🥝,}</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Repeat the previous character 🥝 or more times.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>{🥝,🍉}</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Repeat the previous character from 🥝 to 🍉 times.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>[🥝]</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Any character in 🥝</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>[^🥝]</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Any character that does not exist in 🥝</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>[🥝-🍉]</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Any character between 🥝 and 🍉</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>()</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Group.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>(?:🥝)</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Group not the Capture.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    (?&lt;🍇&gt;🥝)
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Group named 🍇.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </Section>
+            
+            <Section>
+                <Paragraph>
+                    <Bold>More details...</Bold>
+                </Paragraph>
+                <Paragraph>
+                    <Hyperlink 
+                        NavigateUri="https://docs.microsoft.com/ja-jp/dotnet/standard/base-types/regular-expressions"
+                        RequestNavigate="Hyperlink_OnRequestNavigate">
+                        Regular expression of .NET | Microsoft Docs
+                    </Hyperlink>
+                </Paragraph>
+            </Section>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
 </UserControl>
