@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp27"
+        xmlns:page="clr-namespace:WpfApp27.Views.Pages"
         mc:Ignorable="d"
         Title="Regex Tester .NET" Height="450" Width="800"
         ResizeMode="CanResizeWithGrip">
@@ -14,8 +15,12 @@
         </Grid.RowDefinitions>
         
         <TabControl Margin="6">
-            <TabItem Header="Matching"></TabItem>
-            <TabItem Header="Help"></TabItem>
+            <TabItem Header="Matching">
+                <page:MatchingContent/>
+            </TabItem>
+            <TabItem Header="Help">
+                <page:HelpContent/>
+            </TabItem>
         </TabControl>
         
         <StackPanel Grid.Row="1">
